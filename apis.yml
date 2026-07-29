@@ -1,8 +1,23 @@
 aid: jeeva-ai
 name: Jeeva AI
-description: 'Jeeva AI is a company surfaced as a portfolio company of sapphire-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Jeeva AI builds, deploys, and governs autonomous digital workers — AI agents that perceive,
+  reason, act, and remember context across business systems. Workers are deployed with natural-language
+  (no-code) descriptions and automate workflows across revenue, IT, customer service, operations, finance,
+  security, and HR. The platform serves 36,000+ active users, runs production digital workers, and is
+  backed by Sapphire Ventures following a $9M raise. Jeeva AI does not currently publish a public API
+  reference or OpenAPI definition; enrichment here is identity, trust, and security posture.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/assets/RErQi3dkoXX4oN1AdLpYpcxBPY.png
 url: https://raw.githubusercontent.com/api-evangelist/jeeva-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai
+- AI Agents
+- Digital Workers
+- Sales Automation
+- Revenue Operations
+- No-Code
+- Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +46,34 @@ maintainers:
 common:
 - type: Website
   url: https://www.jeeva.ai/
+- type: SignUp
+  url: https://app.jeeva.ai/?join-growth=1
+- type: Login
+  url: https://app.jeeva.ai/
+- type: Pricing
+  url: https://www.jeeva.ai/pricing
+- type: Blog
+  url: https://www.jeeva.ai/blog
+- type: Roadmap
+  url: https://www.jeeva.ai/roadmap
+- type: Integrations
+  url: https://www.jeeva.ai/integrations-4
+- type: TermsOfService
+  url: https://www.jeeva.ai/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.jeeva.ai/privacy-policies
+- type: StatusPage
+  url: https://www.jeeva.ai/system-status
+- type: TrustCenter
+  url: security/jeeva-ai-trust-center.yml
+- type: Compliance
+  url: https://www.jeeva.ai/security
+- type: DomainSecurity
+  url: security/jeeva-ai-domain-security.yml
+- type: LLMsTxt
+  url: llms/jeeva-ai-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

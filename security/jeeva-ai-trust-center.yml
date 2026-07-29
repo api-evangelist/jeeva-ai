@@ -1,0 +1,14 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://www.jeeva.ai/security
+url: https://www.jeeva.ai/security
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://www.jeeva.ai/security
+  keywords:
+  - soc 2
+  - compliance certification
+  - gdpr
