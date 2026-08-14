@@ -3,9 +3,13 @@ name: Jeeva AI
 description: 'Jeeva AI builds, deploys, and governs autonomous digital workers — AI agents that perceive,
   reason, act, and remember context across business systems. Workers are deployed with natural-language
   (no-code) descriptions and automate workflows across revenue, IT, customer service, operations, finance,
-  security, and HR. The platform serves 36,000+ active users, runs production digital workers, and is
-  backed by Sapphire Ventures following a $9M raise. Jeeva AI does not currently publish a public API
-  reference or OpenAPI definition; enrichment here is identity, trust, and security posture.'
+  security, and HR. Revenue workers are live today; a Worker Builder Platform and IT and customer-service
+  worker categories are in early access on a shared runtime. The platform serves 36,000+ active users and
+  is backed by Sapphire Ventures, Alt Capital and Bonfire Ventures. Jeeva AI is sold as an end-user SaaS
+  product with a free tier, self-serve Growth and Scale plans and a custom Enterprise tier; it publishes no
+  public API, no developer portal, no API reference, no OpenAPI/AsyncAPI/GraphQL definition, no SDK in any
+  package registry and no MCP server. The api.jeeva.ai host is an AWS API Gateway that answers 403 Missing
+  Authentication Token on every path. Coverage here is identity, commercial, trust and security posture.'
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -27,7 +31,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-14'
 tags:
 - Company
 - Ai
@@ -72,8 +76,47 @@ common:
   url: security/jeeva-ai-domain-security.yml
 - type: LLMsTxt
   url: llms/jeeva-ai-llms.txt
+- type: Documentation
+  url: https://www.jeeva.ai/jeeva-university
+- type: GettingStarted
+  url: https://www.jeeva.ai/quick-start-guide
+- type: Support
+  url: https://www.jeeva.ai/contact-us
+- type: GitHubOrganization
+  url: https://github.com/Involve-AI
+- type: Plans
+  url: plans/jeeva-ai-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/jeeva-ai-rate-limits.yml
+- type: Packages
+  url: packages/jeeva-ai-packages.yml
+- type: Components
+  url: components/jeeva-ai-components.yml
+- type: Lifecycle
+  url: lifecycle/jeeva-ai-lifecycle.yml
+- type: Conformance
+  url: conformance/jeeva-ai-conformance.yml
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-14'
+  status: enriched
+  artifacts_added: 7
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Jeeva AI ships an end-user sales-automation SaaS and no developer program: its
+    705-URL sitemap contains no developer portal, API reference or docs host, no pricing
+    tier grants API access, and the only API host, api.jeeva.ai, is an AWS API Gateway
+    that returns 403 {"message":"Missing Authentication Token"} to every unauthenticated
+    path including /openapi.json, /graphql, /mcp and /.well-known/*.
+  evidence:
+  - url: https://api.jeeva.ai/openapi.json
+    status: 403
+  - url: https://www.jeeva.ai/llms.txt
+    status: 404
+  - url: https://www.jeeva.ai/.well-known/agent-card.json
+    status: 404
+  - url: https://www.jeeva.ai/sitemap.xml
+    status: 200
+  checked: '2026-08-14'
