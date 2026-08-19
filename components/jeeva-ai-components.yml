@@ -1,0 +1,79 @@
+generated: '2026-08-14'
+method: searched
+source: https://www.jeeva.ai/jeeva-university
+note: >-
+  Jeeva AI ships two client-side embeddable surfaces that customers install on their own
+  websites, both documented in the Jeeva University knowledge base with per-platform
+  install guides. Neither loader URL is published publicly — the snippet is issued
+  per-account from the Script section of the Jeeva dashboard — so no version, integrity
+  hash or CDN path can be recorded here, and a consumer cannot tell from the public
+  documentation what build they are embedding. These are distribution surfaces, not SDKs;
+  no SDKs pointer is emitted.
+families:
+- name: Jeeva Script
+  kind: tracking-snippet
+  product: Inbound Lead Explorer
+  description: >-
+    A JavaScript tag pasted before the closing </head> tag of a customer's site that
+    de-anonymizes website visitors and feeds them into Jeeva as inbound leads.
+  loader:
+    published_url: null
+    versioned: false
+    distribution: per-account snippet copied from the Jeeva dashboard Script section
+  install_guides:
+  - platform: HTML files
+    url: https://www.jeeva.ai/doc-articles/how-to-embed-jeeva-script-into-your-website-html-files
+  - platform: WordPress
+    url: https://www.jeeva.ai/doc-articles/integrate-jeeva-script-into-wordpress
+  - platform: WordPress (plugin)
+    url: https://www.jeeva.ai/doc-articles/how-to-add-jeeva-script-to-wordpress-via-plugin
+  - platform: WordPress (Elementor)
+    url: https://www.jeeva.ai/doc-articles/integrating-jeeva-script-into-wordpress-using-elementor
+  - platform: Webflow
+    url: https://www.jeeva.ai/doc-articles/how-to-embed-jeeva-script-into-your-webflow-website
+  - platform: Shopify
+    url: https://www.jeeva.ai/doc-articles/how-to-embed-jeeva-script-into-your-shopify-store
+  - platform: Squarespace
+    url: https://www.jeeva.ai/doc-articles/add-jeeva-script-to-squarespace
+  - platform: Wix
+    url: https://www.jeeva.ai/doc-articles/how-to-add-jeeva-script-to-wix
+  - platform: React
+    url: https://www.jeeva.ai/doc-articles/how-to-embed-jeeva-script-into-a-react-js-application
+  - platform: Next.js
+    url: https://www.jeeva.ai/doc-articles/how-to-add-jeeva-script-to-nextjs
+  - platform: HubSpot CMS
+    url: https://www.jeeva.ai/doc-articles/embed-jeeva-script-into-hubspot-cms
+- name: Jeeva AI Chat
+  kind: embedded-widget
+  product: AI Chat
+  description: >-
+    An embeddable website chat widget that qualifies and routes inbound visitors with an
+    AI agent.
+  loader:
+    published_url: null
+    versioned: false
+    distribution: per-account snippet issued in-app
+  install_guides:
+  - platform: Website (generic)
+    url: https://www.jeeva.ai/doc-articles/install-jeeva-ai-chat-to-your-website
+  - platform: Website (snippet)
+    url: https://www.jeeva.ai/doc-articles/how-to-install-the-jeeva-ai-chat-snippet-into-your-website-copy
+  product_page: https://www.jeeva.ai/ai-chat
+- name: Jeeva AI Agent (browser extension)
+  kind: browser-extension
+  description: >-
+    Chrome extension that runs lead finding, enrichment and AI email drafting inside Gmail
+    and Outlook. Catalogued with a version and release date in
+    packages/jeeva-ai-packages.yml.
+  loader:
+    published_url: https://chromewebstore.google.com/detail/jeeva-ai-agent/cdigpamakgpjojeggfmnjfgpbakfmmai
+    versioned: true
+    version: 2.3.0
+    published: '2025-08-04'
+x-evidence:
+- fetched: '2026-08-14'
+  url: https://www.jeeva.ai/doc-articles/how-to-embed-jeeva-script-into-your-website-html-files
+  http_status: 200
+- fetched: '2026-08-14'
+  url: https://www.jeeva.ai/jeeva-university
+  http_status: 200

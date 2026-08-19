@@ -1,0 +1,51 @@
+generated: '2026-08-14'
+method: searched
+source: https://www.jeeva.ai/doc-articles/daily-sending-limit
+limit_count: 0
+note: >-
+  Jeeva AI publishes no API rate limits, because it publishes no public API. The API host
+  api.jeeva.ai is an AWS API Gateway that answers 403 {"message":"Missing Authentication
+  Token"} on every path probed, and there is no developer portal or API reference to carry
+  limits. No X-RateLimit-*, RateLimit-* or Retry-After header contract is documented
+  anywhere on the public surface. The product-level throughput controls below are recorded
+  because they are the only published limits, but they are user-configured application
+  settings on a connected mailbox, not an API rate limit, so limit_count stays 0.
+headers:
+  documented: false
+  observed: []
+exhaustion_status_code: null
+limits: []
+product_throughput_controls:
+- name: Daily Email Limit
+  scope: per connected inbox
+  window: day
+  limit: user-configured
+  description: >-
+    Maximum number of emails Jeeva may send from a connected inbox per day. Set by the
+    user; bounded in practice by the sending limits of the underlying provider (Gmail,
+    Outlook), not by Jeeva.
+  source: https://www.jeeva.ai/doc-articles/daily-sending-limit
+- name: Sending Limit Increase (warm-up)
+  scope: per connected inbox
+  window: day
+  limit: user-configured increment
+  description: >-
+    A per-day increment that raises the daily email limit gradually (e.g. start at 20/day
+    with an increase of 1 to reach 21, then 22) to build sender reputation.
+  source: https://www.jeeva.ai/doc-articles/daily-sending-limit
+- name: Credit metering
+  scope: per account
+  window: billing period
+  limit: plan credit balance
+  description: >-
+    Enrichment and campaign enrolment consume credits (1 credit per email enrichment,
+    2 per verified phone, 6 per campaign enrolment). Exhaustion surfaces in the app as an
+    "insufficient credits" error, not as an HTTP status.
+  source: https://www.jeeva.ai/doc-articles/credits-billing-101
+x-evidence:
+- fetched: '2026-08-14'
+  url: https://www.jeeva.ai/doc-articles/daily-sending-limit
+  http_status: 200
+- fetched: '2026-08-14'
+  url: https://api.jeeva.ai/openapi.json
+  http_status: 403

@@ -1,0 +1,76 @@
+generated: '2026-08-14'
+method: searched
+source: https://www.jeeva.ai/system-status
+note: >-
+  Jeeva AI publishes an operational surface (a self-hosted status page with a dated
+  incident history, a staged product roadmap, and an enterprise service-level commitments
+  page) but no API lifecycle at all — there is no public API, therefore no versioning
+  scheme, no deprecation policy, no Sunset/Deprecation header contract and no deprecated
+  operations to enumerate.
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: No public API and no published API versioning policy.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  deprecation_header: false
+  note: No deprecation or sunset policy published.
+status_page:
+  url: https://www.jeeva.ai/system-status
+  hosted: first-party
+  current_state: All Systems Operational
+  incident_history_published: true
+  incidents:
+  - date: '2025-10-20'
+    title: Partial Service Disruption - AWS Regional Outage (US-EAST-1)
+    duration: ~15h 15m
+    resolution: >-
+      AWS resolved a DNS subsystem failure in us-east-1; Jeeva services recovered
+      automatically. Notetaker meeting joins and data enrichment workflows were affected.
+      No customer data lost or compromised.
+  - date: '2025-07-30'
+    title: Service Outage
+    duration: ~25m
+    resolution: >-
+      Login and platform access failed after a production deployment; service restored and
+      additional deployment controls added. No customer data lost or compromised.
+roadmap:
+  url: https://www.jeeva.ai/roadmap
+  stages_published: true
+  stages:
+  - name: Revenue Workers
+    status: Live Today
+  - name: Worker Builder Platform
+    status: Early Access
+  - name: IT Digital Workers
+    status: Early Access
+  - name: Customer Service Workers
+    status: Early Access
+sla:
+  url: https://www.jeeva.ai/enterpriseready/service-level-commitments-support-escalation
+  uptime_target: null
+  uptime_target_note: >-
+    The page describes "guaranteed uptime targets", active-active AWS availability zones
+    and 60-second synthetic checks, but publishes no numeric availability percentage.
+  escalation:
+  - severity: High
+    first_response: 30m
+    update_cadence: hourly
+    resolution_target: 24h
+  - severity: Critical
+    first_response: 15m
+    update_cadence: 30m
+    resolution_target: 4h (workaround)
+deprecated_operations: []
+x-evidence:
+- fetched: '2026-08-14'
+  url: https://www.jeeva.ai/system-status
+  http_status: 200
+- fetched: '2026-08-14'
+  url: https://www.jeeva.ai/roadmap
+  http_status: 200
+- fetched: '2026-08-14'
+  url: https://www.jeeva.ai/enterpriseready/service-level-commitments-support-escalation
+  http_status: 200

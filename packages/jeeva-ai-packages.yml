@@ -1,0 +1,66 @@
+generated: '2026-08-14'
+method: searched
+source: >-
+  https://chromewebstore.google.com/detail/jeeva-ai-agent/cdigpamakgpjojeggfmnjfgpbakfmmai
+  + unauthenticated registry searches of npm, PyPI, RubyGems, crates.io, NuGet, Maven
+  Central and pkg.go.dev
+sdk_count: 0
+note: >-
+  Jeeva AI publishes no client library in any package registry. The only first-party
+  distributed package found is the browser extension below, which is an end-user product,
+  not an SDK — no `SDKs` pointer is emitted for it. The company GitHub organization is
+  github.com/Involve-AI (profile name "Jeeva AI", blog jeeva.ai, created 2020-08-19,
+  carrying the Involve.ai name the company shipped under before the Jeeva rebrand); it has
+  0 public repositories, so there is no published source distribution either.
+packages:
+- language: javascript
+  registry: chrome-web-store
+  name: Jeeva AI Agent
+  id: cdigpamakgpjojeggfmnjfgpbakfmmai
+  url: https://chromewebstore.google.com/detail/jeeva-ai-agent/cdigpamakgpjojeggfmnjfgpbakfmmai
+  kind: browser-extension
+  official: true
+  official_evidence: >-
+    Chrome Web Store listing developer email gaurav@jeeva.ai (Gaurav Bhattacharya, CEO of
+    Jeeva AI) and developer website jeeva.ai.
+  version: 2.3.0
+  published: '2025-08-04'
+  install: Install from the Chrome Web Store
+  users: 337
+  size: 1.88MiB
+  note: >-
+    End-user Chrome extension that surfaces lead finding, enrichment and AI email drafts
+    inside Gmail and Outlook. It is not a programmable client library and exposes no
+    documented API to developers.
+registries_checked:
+- registry: npm
+  query: jeeva
+  result: no first-party package (only unrelated third-party packages)
+- registry: pypi
+  query: jeeva, jeeva-ai
+  result: no first-party package
+- registry: rubygems
+  result: no first-party package
+- registry: crates.io
+  result: no first-party package
+- registry: nuget
+  result: no first-party package
+- registry: maven-central
+  result: no first-party package
+- registry: pkg.go.dev
+  result: no first-party package
+- registry: postman
+  query: jeeva
+  result: no first-party public workspace or collection
+source_code:
+  github_org: https://github.com/Involve-AI
+  github_org_name: Jeeva AI
+  public_repos: 0
+  checked: '2026-08-14'
+x-evidence:
+- fetched: '2026-08-14'
+  url: https://chromewebstore.google.com/detail/jeeva-ai-agent/cdigpamakgpjojeggfmnjfgpbakfmmai
+  http_status: 200
+- fetched: '2026-08-14'
+  url: https://api.github.com/orgs/Involve-AI
+  http_status: 200

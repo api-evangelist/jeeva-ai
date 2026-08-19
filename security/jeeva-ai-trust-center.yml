@@ -1,14 +1,58 @@
-generated: '2026-07-19'
+generated: '2026-08-14'
 method: searched
 probe: true
-source: https://www.jeeva.ai/security
-url: https://www.jeeva.ai/security
+source: https://trust.jeeva.ai
+url: https://trust.jeeva.ai
+hosted_by: Vanta
+redirects_to: https://app.vanta.com/jeeva.ai/trust/f5m33tcpxbj1kp6k4ooz
 certifications:
 - SOC 2
 - GDPR
+policies_published:
+- url: https://www.jeeva.ai/security
+  title: Security Practices
+- url: https://www.jeeva.ai/sub-processors
+  title: Sub-Processors
+- url: https://www.jeeva.ai/jeeva-ai-company-dpa
+  title: Data Processing Addendum
+- url: https://www.jeeva.ai/jeeva-ai-company-policies
+  title: Policy Packet
+- url: https://www.jeeva.ai/privacy-policies
+  title: Privacy Policy
+- url: https://www.jeeva.ai/enterpriseready
+  title: Enterprise Ready program
+controls_published:
+- Hosted on AWS and Microsoft Azure
+- TLS 1.2+ in transit, AES-256 at rest, plus database-level encryption
+- Logical separation of customer data per tenant
+- Least-privilege RBAC with MFA enforced across all access points
+- Firewalls, network segmentation, IDPS, DDoS protection
+- Continuous monitoring, third-party audits, vulnerability assessments and penetration
+  tests
+- Documented incident response, business continuity and disaster recovery plans
+- Security awareness training, secure coding practices and phishing simulations
+- DSAR support
+note: >-
+  trust.jeeva.ai resolves (HTTP 200) and 302s to a Vanta-hosted trust center. The Vanta
+  page is a client-rendered SPA, so the certification list, evidence documents and any
+  gated report downloads could not be read anonymously; the certifications recorded here
+  are the ones Jeeva AI states in its own words on https://www.jeeva.ai/security (last
+  updated 2025-05-23) and on the Enterprise tier of the pricing page. No numeric control
+  count, audit date, or report period is published on the anonymous surface.
 evidence:
 - source: https://www.jeeva.ai/security
   keywords:
   - soc 2
   - compliance certification
   - gdpr
+- source: https://trust.jeeva.ai
+  http_status: 200
+  keywords:
+  - vanta trust center
+x-evidence:
+- fetched: '2026-08-14'
+  url: https://trust.jeeva.ai/
+  http_status: 200
+- fetched: '2026-08-14'
+  url: https://www.jeeva.ai/security
+  http_status: 200

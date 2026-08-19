@@ -1,0 +1,118 @@
+generated: '2026-08-14'
+method: searched
+source: https://www.jeeva.ai/pricing
+docs: https://www.jeeva.ai/pricing
+currency: USD
+billing_periods:
+- monthly
+- annual
+annual_discount: '20%'
+plan_count: 4
+note: >-
+  Prices captured from the published self-serve pricing page as displayed on the annual
+  ("Bill Annually") toggle. Jeeva AI sells an end-user SaaS product; no tier on this page
+  includes API access, an API call allowance, or a developer plan of any kind. The quota
+  rows are recorded verbatim as published — note that the Free tier is shown with a LARGER
+  email/phone allowance (10,000 / 1,250) than the paid Growth and Scale tiers, which reads
+  as a page error on Jeeva's side rather than a real entitlement; it is recorded as
+  published rather than corrected.
+plans:
+- name: Free
+  price: 0
+  currency: USD
+  period: month
+  billing: annual
+  positioning: Best for trying Jeeva risk-free
+  seats: 1
+  quota:
+    emails_per_month: 10000
+    cell_phones_per_month: 1250
+    credits: pay per credit
+  includes:
+  - Email finder & verification
+  - Basic prospect search
+  - Chrome extension
+  - Email templates
+- name: Growth
+  price: 95
+  currency: USD
+  period: month
+  billing: annual
+  annual_savings: 286
+  positioning: For individuals ready to scale outreach
+  seats: 1
+  quota:
+    emails_per_month: 3000
+    cell_phones_per_month: 375
+    credits: pay per credit
+  includes:
+  - Advanced targeting filters
+  - Auto-updating lead lists
+  - Call notes synced to CRM
+  - Multiple inbox management
+  - Time-zone scheduling
+- name: Scale
+  price: 239
+  currency: USD
+  period: month
+  billing: annual
+  annual_savings: 718
+  positioning: For power users who need pro-level tools
+  seats: 1
+  quota:
+    emails_per_month: 7200
+    cell_phones_per_month: 900
+    credits: pay per credit
+  includes:
+  - Everything in Growth
+  - Multichannel outreach (email, LinkedIn, AI follow-ups)
+  - Campaign personalization at scale
+  - A/B testing of messages and sequences
+  - Workflow automation across inbox, CRM and sequences
+- name: Enterprise
+  price: null
+  price_model: custom
+  currency: USD
+  period: year
+  billing: annual
+  positioning: For companies scaling safely with AI
+  seats: 10+
+  quota:
+    emails_per_month: 10000
+    cell_phones_per_month: 1250
+    credits: flexible credits
+  cta: Talk to Sales
+  includes:
+  - AI handling of inbound leads, site chat and routing
+  - AI prioritization signals
+  - Advanced admin controls, SSO, compliance & SOC 2
+  - Private cloud / on-prem deployment available
+  - Custom dashboards, training & adoption guides
+  - Dedicated manager & weekly strategy calls
+metering:
+  unit: credit
+  source: https://www.jeeva.ai/doc-articles/credits-billing-101
+  costs:
+  - action: Email enrichment
+    credits_per_lead: 1
+  - action: Verified phone enrichment
+    credits_per_lead: 2
+  - action: Campaign enrolment (LinkedIn or email)
+    credits_per_lead: 6
+  behavior:
+  - Credits are deducted instantly once each action is processed.
+  - Remaining credits carry over when a plan is upgraded.
+  - Unused trial credits expire when the trial ends unless stated otherwise.
+trial:
+  offered: true
+  length_days: 14
+  source: https://www.jeeva.ai/quick-start-guide
+api_access:
+  offered_in_any_tier: false
+  note: >-
+    No published tier grants API access, API keys, or an API request allowance; Jeeva AI
+    does not publish a developer plan.
+x-evidence:
+  fetched: '2026-08-14'
+  url: https://www.jeeva.ai/pricing
+  http_status: 200
