@@ -10,6 +10,17 @@ description: 'Jeeva AI builds, deploys, and governs autonomous digital workers â
   public API, no developer portal, no API reference, no OpenAPI/AsyncAPI/GraphQL definition, no SDK in any
   package registry and no MCP server. The api.jeeva.ai host is an AWS API Gateway that answers 403 Missing
   Authentication Token on every path. Coverage here is identity, commercial, trust and security posture.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service Â· you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
