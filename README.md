@@ -64,6 +64,103 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Jeeva AI is a company surfaced as a portfolio company of sapphire-ventures and added to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.
+Jeeva AI builds, deploys, and governs autonomous digital workers — AI agents that perceive, reason, act, and remember context across business systems. Workers are deployed with natural-language (no-code) descriptions and automate workflows across revenue, IT, customer service, operations, finance, security, and HR. Revenue workers are live today; a Worker Builder Platform and IT and customer-service worker categories are in early access on a shared runtime. The platform serves 36,000+ active users and is backed by Sapphire Ventures, Alt Capital and Bonfire Ventures. Jeeva AI is sold as an end-user SaaS product with a free tier, self-serve Growth and Scale plans and a custom Enterprise tier; it publishes no public API, no developer portal, no API reference, no OpenAPI/AsyncAPI/GraphQL definition, no SDK in any package registry and no MCP server. The api.jeeva.ai host is an AWS API Gateway that answers 403 Missing Authentication Token on every path. Coverage here is identity, commercial, trust and security posture.
 
-Backed by: sapphire-ventures — https://www.jeeva.ai/
+**Areas:** Company · Artificial Intelligence · AI Agents · Digital Workers · Sales Automation · Revenue Operations · No-Code · Automation
+
+## Jeeva AI on APIs.io
+
+Everything profiled for Jeeva AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/jeeva-ai/](https://apis.io/providers/jeeva-ai/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Jeeva Ai Domain Security](https://apis.io/security/jeeva-ai/jeeva-ai-domain-security/)
+- [Jeeva Ai Trust Center](https://apis.io/security/jeeva-ai/jeeva-ai-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Jeeva Ai Plans Pricing](https://apis.io/plans/jeeva-ai/jeeva-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Jeeva Ai Rate Limits](https://apis.io/rate-limits/jeeva-ai/jeeva-ai-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.jeeva.ai/)
+- [Documentation](https://www.jeeva.ai/jeeva-university)
+- [Getting started](https://www.jeeva.ai/quick-start-guide)
+- [Pricing](https://www.jeeva.ai/pricing)
+- [Sign up](https://app.jeeva.ai/?join-growth=1)
+- [Support](https://www.jeeva.ai/contact-us)
+- [Blog](https://www.jeeva.ai/blog)
+- [Compliance](https://www.jeeva.ai/security)
+- [Terms of service](https://www.jeeva.ai/terms-and-conditions)
+- [Privacy policy](https://www.jeeva.ai/privacy-policies)
+- [GitHub](https://github.com/Involve-AI)
+- [Status](https://www.jeeva.ai/system-status)
+
+## API Evangelist rating
+
+**Kin Score 34.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 85.5 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/jeeva-ai/](https://apis.io/providers/jeeva-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Jeeva AI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/jeeva-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
